@@ -11,7 +11,6 @@ public:
         while(l<=r)
         {
             int mid=l+(r-l)/2;
-            // cout<<l<<" "<<r<<" "<<mid<<"\n";
             if(target==nums[mid])
             {
                 ans=mid;
@@ -33,12 +32,10 @@ public:
                 if(nums[mid]<target && target<=nums[r])
                 {
                     l=mid+1;
-                    // cout<<"here";
                 }
                 else
                 {
                     r=mid-1;
-                    // cout<<"here1";
                 }
             }
         }
@@ -47,4 +44,3 @@ public:
         
     }
 };
-// 6,7,0,1,2,3,4,5
