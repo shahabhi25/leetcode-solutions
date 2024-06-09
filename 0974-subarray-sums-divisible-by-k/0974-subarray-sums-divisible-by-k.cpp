@@ -12,18 +12,14 @@ public:
         unordered_map<int, int> mp;
         int ans = 0;
         mp[prefix_sum[0]]++;
-        cout<<prefix_sum[0]<<" ";
         for(int i=0; i<n; i++)
         {
             prefix_sum[i+1] = ((prefix_sum[i]+nums[i])%k +k)%k;
             mp[prefix_sum[i+1]]++;
-            cout<<prefix_sum[i+1]<<" ";
         }
-        cout<<"\n";
         
         for(auto i:mp)
         {
-            cout<<i.first<<" "<<i.second<<"\n";
             int m=i.second;
             if(m>1)
             {
