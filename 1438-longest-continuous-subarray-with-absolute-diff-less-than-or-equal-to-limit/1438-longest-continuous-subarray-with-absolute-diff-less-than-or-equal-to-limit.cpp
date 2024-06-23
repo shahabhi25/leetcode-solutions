@@ -4,7 +4,6 @@ public:
         int n=nums.size();
         int ans=nums[0]>limit?1:0;
         map<int, int> mp;
-        // mp[nums[0]]=1;
         
         int l=0;
         int r=0;
