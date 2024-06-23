@@ -24,7 +24,6 @@ public:
         
         while(l<=r)
         {
-            // cout<<l<<" "<<r<<"\n";
             int mid = l + (r-l)/2;
             if(canMake(bloomDay, m, k, mid))
             {
